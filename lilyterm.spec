@@ -9,6 +9,7 @@ License:	GPL v3+
 Group:		X11/Applications
 Source0:	http://lilyterm.luna.com.tw/file/%{name}-%{version}~%{_rc}.tar.gz
 # Source0-md5:	1f239e7623d8b2c03c6dd7be84f5df3d
+Patch0:		%{name}-desktop.patch
 URL:		http://lilyterm.luna.com.tw/index_en.html
 BuildRequires:	gtk+2-devel
 BuildRequires:	intltool
@@ -27,6 +28,7 @@ Lekki, prosty w użyciu, oparty o libvte emulator terminala.
 
 %prep
 %setup -q -n %{name}-%{version}~%{_rc}
+%patch0 -p1
 
 %build
 %{__aclocal}
