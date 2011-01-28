@@ -9,9 +9,13 @@ Group:		X11/Applications
 Source0:	http://lilyterm.luna.com.tw/file/%{name}-%{version}.tar.gz
 # Source0-md5:	995f7b4634523bf5e150b529a4bdbf6f
 URL:		http://lilyterm.luna.com.tw/index_en.html
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	intltool
 BuildRequires:	perl-libxml
+BuildRequires:	pkgconfig
 BuildRequires:	vte-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
