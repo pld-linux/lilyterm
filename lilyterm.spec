@@ -11,7 +11,7 @@ Source0:	http://lilyterm.luna.com.tw/file/%{name}-%{version}.tar.gz
 URL:		http://lilyterm.luna.com.tw/index_en.html
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+2-devel
 BuildRequires:	intltool
 BuildRequires:	perl-libxml
